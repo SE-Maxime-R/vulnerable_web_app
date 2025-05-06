@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(#050505,#244215, #48ff00);
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+#searchcontent {
+    width: 30vw;
+    margin-top: 20vh;
+    text-align: center;
+    background-color: rgb(253, 250, 243);
+    border-radius: 25px;
+    border: solid black;
+    padding: 2% 0 2% 0;
+}

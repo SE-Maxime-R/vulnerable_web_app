@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+        <head>  <meta charset="UTF-8">
+                <title> Hello World !</title>
+                <link rel="stylesheet" href="../static/index.css">
+                <script src="../static/index.js" defer></script>
+        </head>
+        <body>
+                <div id="formcontent">
+                        <p>Hello, Please login with your creds</p>
+                        <form method="GET" onsubmit="return false;">
+                                <input name="username" id="user" type="text" placeholder="Username"><br><br>
+                                <!--user:noob-->
+                                <input name="password" id="passwd" type="text" placeholder="Password"><br><br>
+                                
+                                <button onclick="check_creds()" >Submit </button>
+                        </form>
+                </div>
+                <div id="message">
+                        <p>Send a message to an admin</p>
+                        <form id="xssForm" method="GET">
+                            <input name="messagefield" id="mess" type="text" placeholder="message"><br><br>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+                <div id="response"></div>
+        </body>
+</html>
