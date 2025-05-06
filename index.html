@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+        <head>  <meta charset="UTF-8">
+                <title> Hello World !</title>
+                <link rel="stylesheet" href="index.css">
+        </head>
+        <body>
+                <div>
+                        <p>Hello <span id="greeting"></span>!<br><br> Please login with your creds</p>
+                        <form method="GET">
+                                <input name="user" id="user" type="text" placeholder="Username">
+                                <br>
+                                <br>
+                                <button type="submit"> <!--onclick="xss()"-->Submit </button>
+                                <!-- Est tu sur d'etre au bon endroit ? -->
+                        </form>
+                </div>
+        </body>
+        <script>
+                var params = new URLSearchParams(window.location.search);
+                var usr = params.get("user");
+
+                if (usr) {
+                        document.getElementById("greeting").innerHTML = usr;
+                }
+        </script>
+</html>
